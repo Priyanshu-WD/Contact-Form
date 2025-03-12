@@ -53,7 +53,7 @@ form.addEventListener('submit', (e) => {
         // Reload after showing success message
         setTimeout(() => {
             location.reload();
-        }, 1000); // Adjust delay as needed
+        }, 3000); // Adjust delay as needed
     } else {
         document.querySelector("#container").classList.add("hidden");
         submitButton.disabled = false;
