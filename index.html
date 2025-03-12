@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Form || Frontend Mentor Challenge</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="h-full">
+    <main class="bg-[#dff1e7] h-full">
+<div id="container" class="flex justify-center items-center rounded-2xl text-[white] hidden"> 
+            <div class="flex flex-col justify-center  bg-[#2B4246] p-4 gap-1.5 mt-2 rounded ">
+                <div class="flex gap-1.5">
+                    <img src="images/icon-success-check.svg" alt="Sucess-check">
+                    <h3>Message Sent!</h3>
+                </div>
+                <h3 class="text-[#87A3A6] text-xs">Thanks for completing the form. We'll be in touch soon!</h3>
+            </div>
+        </div>
+        <section class=" flex justify-center items-center p-5">
+            <section class="bg-white p-4 rounded-2xl shadow-md  ">
+                <div class="mb-8">
+                    <h1 class="font-semibold text-[#2b4246] text-2xl">Contact Us</h1>
+                </div>
+                <form action="#" id="form">
+                    <div class=" flex flex-col sm:flex-row sm:gap-5">
+                        <div class="mb-4 sm:w-[50%]">
+                            <label for="firstName" class="text-[#2b4246]">First Name <span class="text-[#0C7D69]">*</span></label>
+                            <input class="border-[#87A3A6] border rounded-sm p-1.5 w-full focus:outline focus:outline-[#0C7D69]" type="text" name="firstName" id="firstName">
+                            <div class="text-[#D73C3C] mt-1 text-sm" id="errorFname"></div>
+                        </div>
+                        <div class="mb-4 sm:w-[50%]">
+                            <label for="lastName" class="text-[#2b4246]">Last Name <span class="text-[#0C7D69]">*</span></label>
+                            <input class="border-[#87A3A6] border rounded-sm p-1.5 w-full focus:outline focus:outline-[#0C7D69]" type="text" name="lastName" id="lastName">
+                            <div class="text-[#D73C3C] mt-1 text-sm" id="errorLname"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="emailAddress" class="text-[#2b4246]">Email Address <span class="text-[#0C7D69]">*</span></label>
+                        <input class="border-[#87A3A6] border rounded-sm p-1.5 w-full focus:outline focus:outline-[#0C7D69]" type="text" name="email" id="emailAddress">
+                        <div class="text-[#D73C3C] mt-1 text-sm" id="errorEmail"></div>
+                    </div>
+                    <div class="mb-2">
+                        <label class="text-[#2b4246]">Query Type<span class="text-[#0C7D69]">*</span></label>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-3 mb-4">
+                        <div class="border-[#87A3A6] border rounded-sm p-1.5 sm:w-[50%]">
+                            <input type="radio" class="accent-[#0C7D69]" name="queryType" id="genEnquiry" value="General Enquiry" aria-required="true">
+                            <label for="genEnquiry">General Enquiry</label>
+                        </div>
+                        <div class="border-[#87A3A6] border rounded-sm p-1.5 sm:w-[50%]">
+                            <input type="radio" class="accent-[#0C7D69]" name="queryType" id="supRequest" value="Support Request">
+                            <label for="supRequest">Support Request</label>
+                        </div>
+                        </div>
+                        <div class="text-[#D73C3C] mt-1 text-sm" id="radioError"></div>
+                    <div class="mb-2 mt-2.5">
+                        <label for="message" class="text-[#2b4246]">Message <span class="text-[#0C7D69]">*</span></label>
+                    </div>
+                    <div>
+                        <textarea id="message" rows="5" cols="22" class="border-[#87A3A6] border rounded-sm p-1.5  focus:outline focus:outline-[#0C7D69] resize-none w-full"></textarea>
+                        <div class="text-[#D73C3C] mt-1 text-sm" id="messageError"></div>
+                    </div>
+                    <div class="flex gap-2 items-baseline mt-5">
+                        <input type="checkbox" name="Consent" id="checkBox"> <label for="Consent" class="text-[#2b4246]">I consent to being contact by the team <span class="text-[#0C7D69]">*</span></label>
+                    </div>
+                    <div class="text-[#D73C3C] mt-1 text-sm" id="consentError"></div>
+                    <div class="mt-5">
+                        <button type="submit" class="bg-[#0C7D69] p-3 w-full rounded cursor-pointer text-[white] tracking-[0.063rem]
+                        " id="reSubmit">Submit</button>
+                    </div>
+                </form>
+            </section>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
